@@ -133,7 +133,8 @@ int print_intger(va_list types, char buffer[],
 
 	i++;
 
-	return (write_the_number(is_negative, i, buffer, flags, width, precision, size));
+	return (write_the_number(is_negative, i, buffer,
+	flags, width, precision, size));
 }
 
 /**
