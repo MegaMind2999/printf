@@ -19,8 +19,9 @@ int print_handler(const char *fmt, int *ind, va_list list, char buffer[],
 		{'c', print_chr}, {'s', print_str}, {'%', print_percent_sign},
 		{'i', print_intger}, {'d', print_intger}, {'b', print_bin},
 		{'u', print_unsignd}, {'o', print_in_octal}, {'x', print_hexadeci},
-		{'X', print_hexadeci_upper}, {'p', print_the_ptr}, {'S', print_non_printable_chars},
-		{'r', print_in_reverse}, {'R', print_rot13_string}, {'\0', NULL}
+		{'X', print_hexadeci_upper}, {'p', print_the_ptr},
+		{'S', print_non_printable_chars}, {'r', print_in_reverse},
+		{'R', print_rot13_string}, {'\0', NULL}
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
 		if (fmt[*ind] == fmt_types[i].fmt)
