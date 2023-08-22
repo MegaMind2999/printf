@@ -30,7 +30,7 @@ struct fmt
 
 /**
  * typedef struct fmt fmt_obj - Structure object
- * @fmt: The format.
+ * @fmt: The format to parse.
  * @fm_t: The function with this format.
  */
 typedef struct fmt fmt_obj;
